@@ -1,5 +1,5 @@
+let id = 0;
 export default function manageBand(state = {
-  let id = 0;
   bands: []
 }, action) {
   switch (action.type) {
