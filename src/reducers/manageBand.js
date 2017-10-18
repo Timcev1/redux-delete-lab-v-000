@@ -9,7 +9,7 @@ export default function manageBand(state = {
       return { bands: state.bands.concat(action.band) }
     case 'DELETE_BAND':
       const bands = state.bands.filter(band => band.id !== action.id);
-      return {bands};
+      return { bands };
     default:
       return state;
   }
