@@ -5,7 +5,7 @@ export default function manageBand(state = {
   switch (action.type) {
     case 'ADD_BAND':
       id++
-      const band = Object.assign({}, action.band, {id:id})
+      const band = Object.assign({}, action.band, {id: id})
       return { bands: state.bands.concat(action.band) }
     case 'DELETE_BAND':
       const bands = state.bands.filter(band => band.id !== action.id);
